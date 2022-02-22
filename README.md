@@ -87,6 +87,8 @@ You can also run this command: `kubectl config current-context`
 Now copy the the external-ip of th service type which is `LoadBalancer` in this case. The simplest way to ping the IP is copy it in a browser (Google Chrome) in my case.
 
 Useful links:
-https://aws.amazon.com/premiumsupport/knowledge-center/eks-cluster-connection/#:~:text=After%20you%20create%20your%20Amazon,using%20the%20kubectl%20command%20line
-https://docs.aws.amazon.com/eks/latest/userguide/eks-networking.html
-https://docs.aws.amazon.com/eks/latest/userguide/network-load-balancing.html
+- https://aws.amazon.com/premiumsupport/knowledge-center/eks-cluster-connection/#:~:text=After%20you%20create%20your%20Amazon,using%20the%20kubectl%20command%20line
+
+- https://docs.aws.amazon.com/eks/latest/userguide/eks-networking.html
+
+- https://docs.aws.amazon.com/eks/latest/userguide/network-load-balancing.html
