@@ -2,9 +2,9 @@ resource "aws_eks_node_group" "eks-node-group" {
   cluster_name    = aws_eks_cluster.my-first-eks-cluster.name
   node_group_name = "eks-first-node"
   node_role_arn   = aws_iam_role.eks_service_role.arn
-  subnet_ids      = ["subnet-02533c76d57cd76e2", "subnet-0305a16a53f3c4218"]
+  subnet_ids      = ["subnet-0b71466d7f346d3d2", "subnet-0b96901ba41c53663"]
 
-  
+
   scaling_config {
     # Example: Create EKS Node Group with 2 instances to start
     desired_size = 1
