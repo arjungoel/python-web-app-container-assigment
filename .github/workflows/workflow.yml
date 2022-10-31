@@ -18,7 +18,7 @@ jobs:
     
     - name: Create .env file for storing Dockerfile secrets
       env:
-        python_environment: ${{ secrets.python_environment }}
+        python_environment: ${{ secrets.PYTHON_ENVIRONMENT }}
       run: |
         touch .env
         echo python_environment="$python_environment" >> .env
