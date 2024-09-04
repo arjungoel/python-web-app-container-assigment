@@ -6,12 +6,13 @@
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "requirements.txt" # Location of package manifests
     schedule:
       interval: "daily"
       time: "20:45"
       timezone: "Asia/Kolkata"
     assignees:
-    - arjungoel
+      - arjungoel
     reviewers:
-    - arjungoel
+      - arjungoel
+    open-pull-requests-limit: 10
