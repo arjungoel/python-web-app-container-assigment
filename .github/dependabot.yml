@@ -5,12 +5,13 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "requirements.txt" # Location of package manifests
+  - package-ecosystem: "pip"
+    directory: "/"
     schedule:
       interval: "daily"
-      time: "20:45"
       timezone: "Asia/Kolkata"
+    allow:
+      - dependency-name: "colorama"
     assignees:
       - arjungoel
     reviewers:
