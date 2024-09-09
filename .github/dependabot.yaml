@@ -11,6 +11,9 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "pip"
-    directory: "requirements.txt"
+    directory: "/"
     schedule:
       interval: "daily"
+    allow:
+      - dependency-name: "click"
+      - dependency-name: "colorama"
