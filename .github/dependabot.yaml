@@ -11,7 +11,7 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "pip"
-    directory: "/python-web-app-container-assigment/requirements.txt"
+    directory: "/python-web-app-container-assigment/"
     schedule:
       interval: "daily"
 
