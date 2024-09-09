@@ -11,6 +11,5 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "pip"
-    directory: "./requirements.txt"
     schedule:
       interval: "daily"
