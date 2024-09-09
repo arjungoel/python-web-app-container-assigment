@@ -10,10 +10,10 @@ updates:
     schedule:
       interval: "daily"
 
-  # - package-ecosystem: "pip"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/python-web-app-container-assigment/requirements.txt"
+    schedule:
+      interval: "daily"
 
   - package-ecosystem: "github-actions"
     directory: "/"

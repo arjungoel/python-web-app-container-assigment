@@ -1,7 +1,7 @@
 name: 'To print the repo files and folders'
 
 on:
-  push:
+  pull_request:
     branches:
     - "main"
 
