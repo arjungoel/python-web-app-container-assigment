@@ -17,4 +17,11 @@ updates:
     allow:
       - dependency-name: "click"
       - dependency-name: "colorama"
-    requirements-file: "requirements.txt"
+    registries:
+      - pip_registry
+
+registries:
+  pip_registry:
+    type: "python-index"
+    url: "https://pypi.org/simple"
+    token: "${{secrets.DEPENDABOT_TOKEN}}"
