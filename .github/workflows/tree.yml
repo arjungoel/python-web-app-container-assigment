@@ -1,0 +1,22 @@
+name: 'To print the repo files and folders'
+
+on:
+  push:
+    branches:
+    - "main"
+
+
+jobs:
+  project-tree:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Print tree structure for the repo
+      run: |
+        tree
+        ls -la
