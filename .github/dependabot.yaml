@@ -1,21 +1,91 @@
 version: 2
+registries:
+  dockerhub:
+    type: docker-registry
+    url: https://registry.hub.docker.com
+    username: argl131095
+    password: ${{secrets.MY_DOCKERHUB_PASSWORD}}
+
 updates:
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    open-pull-requests-limit: 5
+    commit-message:
+      include: scope
+      prefix: "fix (tf)"
+    labels: []
+    rebase-strategy: disabled
+
 
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    target-branch: main
+    registries:
+      - dockerhub
+    assignees:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    open-pull-requests-limit: 5
+    commit-message:
+      include: scope
+      prefix: "docker"
+    labels: []
+    rebase-strategy: disabled
 
   - package-ecosystem: "pip"
-    directory: "/python-web-app-container-assigment/"
+    directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    open-pull-requests-limit: 10
+    commit-message:
+      include: scope
+      prefix: "fix (pip) update"
+    labels: []
+    rebase-strategy: disabled
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Kolkata"
+    target-branch: main
+    assignees:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    reviewers:
+      - "arjungoel1995@gmail.com"
+      - "dependabot"
+    open-pull-requests-limit: 5
+    commit-message:
+      include: scope
+      prefix: "github actions"
+    labels: []
+    rebase-strategy: disabled
